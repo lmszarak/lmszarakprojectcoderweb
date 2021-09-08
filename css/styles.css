@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+.menu{
+    
+    background-color: #12569D;
+    width: 100%;
+    min-height: 100px;
+    position: fixed;
+    z-index: 5;
+    align-items: center;
+    box-shadow: 5px 0 10px black;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(240 240 248);
+}
+
+.butt-nav{
+    display: inline-block;
+	text-decoration: none;
+	font-size: 1rem;
+    background-color: #12569D;
+    border: solid 1px white;
+    border-radius: 150px;
+    padding: 8px 10px;
+	
+}
+
+
+.transform-nav{
+    transition: all .3s ease-in-out;
+    border: solid 1px transparent;
+    color: white;
+
+}
+
+.transform-nav:hover{
+    background-color: white;
+    color: #12569D;
+    border: solid 1px #adb1b6;
+}
+
+.text-pink{
+    color: #ed1d85;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+}
+.text-process{
+    font-family: 'Open Sans', sans-serif;
+    color: #12569D;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+}
+
+
+.contenido-slider{
+    padding: 1% 350px;
+    margin: 20px 150px 0 150px;
+    display: block;
+    
+    
+}
+
+
+/* mq XS*/
+
+@media (min-width: 320px) and (max-width: 576px){
+    .img-procesos{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+
+    .img-procesos img{
+        height: 200px;
+        margin-left: 30px;
+        width: 60%;
+    }
+
+    .contenido-slider{
+        padding: 30px 10px 10px 10px;
+        height: 100%;
+        margin:40px;
+    }
+
+    .banner img{
+        display: flex;
+        justify-content: center;
+        padding-top: 120px;
+    }
+
+    .testimonials .row img{
+        width: 60%;
+    }
+
+    .grid-container .banner-pages-hogares{
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-hogares-home.jpg);
+        display: block;
+        position: relative;
+        height: 200px;
+        margin: 110px 0 0 0;
+    }
+    .container-pages{
+        margin-top: 10px;
+    }
+    .container-pages h3{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .container-pages h1{
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    .container-pages p, .boton-page-hogar{
+        visibility: hidden;
+    }
+    .grid-container .banner-pages-oficinas, .banner-pages-empresas{
+        
+        display: block;
+        position: relative;
+        height: 200px;
+        margin: 110px 0 0 0;
+    }
+
+    .mq-of p, .boton-page-hogar{
+        visibility: hidden;
+    }
+
+   
+    .row .col-md-4.col-sm-5{
+        padding: 0 20px 0 40px;
+    }
+    
+    .row .col-md-8.col-sm-7{
+        padding: 0 0 0 50px;
+    }
+    .container .calidad-premium{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        color: #0d1426b8;
+    }
+    .tratamientos p{
+        font-size: 16px;
+        margin: 0 5px;
+    }
+    .servicios-soluciones{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: #0d1426b8;
+    }
+    .servicios-soluciones ul li{
+        font-size: 14px;
+    }
+
+
+}
+
+/* mq SM */
+
+@media (min-width: 577px) and (max-width: 768px){
+    .procesos{
+        
+        text-align: center;
+    }
+    .banner img{
+        display: flex;
+        justify-content: center;
+        padding-top: 120px;
+    }
+    
+    .contenido-slider{
+        margin: 0;
+        padding: 1% 200px;
+    }
+
+    .testimonials .row img{
+        width: 60%;
+    }
+
+    .grid-container .banner-pages-hogares{
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-hogares-home.jpg);
+        display: block;
+        position: relative;
+        height: 300px;
+        margin: 100px 0 0 0;
+    }
+
+    .container-pages{
+        margin-top: 10px;
+    }
+    .container-pages h3, p{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .container-pages h1{
+        font-size: 26px;
+    }
+
+    .grid-container .banner-pages-oficinas{
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-oficina-home.jpg);
+        display: block;
+        position: relative;
+        height: 300px;
+        margin: 100px 0 0 0;
+    }
+    .mq-of p, .boton-page-hogar{
+        visibility: hidden;
+    }
+    .grid-container .banner-pages-negocios{
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-negocios-home.jpg);
+        display: block;
+        position: relative;
+        height: 300px;
+        margin: 100px 0 0 0;
+    }
+
+    .grid-container .banner-pages-empresas{
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-industria-botellones.jpg);
+        display: block;
+        position: relative;
+        height: 300px;
+        margin: 100px 0 0 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .img-procesos img{
+        height: 240px;
+      
+    }
+    .contenido-slider{
+        margin: 0;
+        padding: 2% 500px;
+    }
+
+    .grid-container .banner-pages-hogares, .banner-pages-oficinas, .banner-pages-negocios, .banner-pages-empresas{
+        
+        margin: 100px 0 0 0;
+    }
+    
+    .text-pages-p{
+        margin-right: 500px;
+        word-spacing: 2px;
+        font-size: 18px;
+    }
+
+    .container-pages{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .container-pages h3, p{
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .container-pages h1{
+        font-size: 26px;
+    }
+    .row .col-md-4.col-sm-5{
+        padding: 0 60px 0 40px;
+    }
+    
+    .row .col-md-8.col-sm-7{
+        padding: 0 0 0 80px;
+    }
+    
+    .container .calidad-premium{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #0d1426b8;
+    }
+    .tratamientos p{
+        font-size: 16px;
+        margin: 0 100px;
+    }
+    .servicios-soluciones{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #0d1426b8;
+    }
+    .servicios-soluciones ul li{
+        font-size: 20px;
+    }
+   
+}
+
+
+
+/* NUESTROS PRODUCTOS*/
+
+.dispensers-img{
+    height: 250px;
+    width: auto;
+    margin: 0 auto;
+    transition: all 500ms ease-in-out;
+}
+
+.dispensers-img:hover{
+    transform: scale(1.2);
+}
+
+.bg-dispensers{
+    
+    /*background-color: #FADBD8 !important;*/
+
+    background-image: url(../media/desktop-full-water-somos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.text-dispensers{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #12569D;
+}
+
+#servicios .row p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+} 
+
+/*PAGES - HOGARES*/
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-areas:
+		
+		"main";
+	grid-gap: 20px;
+	padding: 20px;
+
+}
+
+.banner-pages-hogares{
+    grid-area: main;
+    background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-full-hogares-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    
+        
+}
+
+.text-pages-h1{
+    font-weight: 700;
+    color: #12569D;
+    padding-bottom: 50px;
+}
+
+
+.text-pages-p{
+    padding: auto;
+   
+    line-height: 28px;
+    color: #232323;
+    text-align: left;
+    
+    
+}
+
+
+/*PAGES - OFICINAS*/
+    /*banner*/
+
+.banner-pages-oficinas{
+    grid-area: main;
+    background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-full-oficina-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    
+      
+}
+
+    /*section beneficios*/
+
+   
+.numbered-wraper{
+    padding: 40px 0 20px 0;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.numbered-wraper .col-sm-8.oficinas{
+    border-left: solid 1px #40C7F4;
+    padding-left: 20px;
+}
+.numbered-text-info{
+    display: flex;
+}
+.numbered-text-info .oficinas {
+    color: #40C7F4;
+}
+
+.numbered-text-info span {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.font-oficinas h2{
+    font-size: 24px;
+    color: #0261AA;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+/*PAGES - NEGOCIOS*/
+    /*banner*/
+
+.banner-pages-negocios{
+        grid-area: main;
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-full-negocios-home.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+          
+}
+
+
+
+
+.tratamientos{
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    padding-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #0d1426b8;
+}
+.tratamientos h3{
+    color:#ED1D85;
+
+}
+
+
+
+
+/*PAGES - EMPRESAS*/
+    /*banner*/
+
+    .banner-pages-empresas{
+        grid-area: main;
+        background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/desktop-full-industria-botellones.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        max-width: 100%;
+       
+          
+}
+
+
+
+.container-contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+    
+}
+
+.container-contacto .row{
+    background-color: #FAEFED;
+}
+
+
+.contact-info .media-left {
+    vertical-align: middle;
+    padding: 0px 20px;
+}
+
+.contact-media .media-left,.media-body {
+    padding: 0 5px;
+}
+
+
+.contact-info .media-body {
+    padding: 20px 15px 20px 0px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+
+
+/* Footer */
+
+.page-pie{
+   
+    background-image: url(https://www.culligan.com.ar/wp-content/themes/culligan/assets/dist/images/footer-bg-blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;    
+}
+
+.page-fondo{
+   
+    padding: 200px 100px 15px;
+    text-align: left;
+}
+
+.page-pie p{
+    font-size: 20px;
+}
+
+.footer-color{
+    font-size: 14px;
+    width: 100%;
+	color: white;
+	margin: auto;
+    text-align: center;
+}
+
+.format{
+    text-decoration: none;
+    list-style: none;
+    padding: 0 0px;
+    text-align: center;
+}
+
+
+
+.number-phone{
+    color: #ffbc07;
+    font-weight: bold;
+}
